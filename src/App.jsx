@@ -1,15 +1,16 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { RouterProvider, Routes } from 'react-router-dom'
 import './App.css'
-import Login from './Pages/Login/Login'
+import routes from './Routes/Routes/Routes'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-     <Login></Login>
+      <RouterProvider
+        const router={routes}
+      >
+      </RouterProvider>
+
     </>
   )
 }
